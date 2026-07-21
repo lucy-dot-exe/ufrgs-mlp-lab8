@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# MLP - Lab 8
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A small React + TypeScript app for registering students ("Alunos"). Built with Create React App, React Router, and React Bootstrap. Student data is persisted to the browser's `localStorage`.
+
+This project was made for a lab assignment in the UFRGS course **Modelos de Linguagens de Programação** (MLP).
+
+Live version: https://lucy-dot-exe.github.io/ufrgs-mlp-lab8/
+
+## Tech Stack
+
+- React 17 + TypeScript
+- React Router (`HashRouter`) for client-side routing
+- React Bootstrap for UI components
+- Font Awesome icons
+
+## Getting Started
+
+Install dependencies and start the dev server:
+
+```
+yarn install
+yarn start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page reloads automatically as you edit files.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the app in development mode.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder, minified and ready to deploy.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `yarn deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app and publishes the `build` folder to GitHub Pages (via `gh-pages`).
 
-### `yarn eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [src/App.tsx](src/App.tsx) — routes and all app components (`Homepage`, `Register`)
+- [src/index.tsx](src/index.tsx) — app entry point
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). See the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/) for more information.
